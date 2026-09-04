@@ -41,3 +41,22 @@ VALUES(
 );
 ```
 
+
+## INSERT na tabela de Lojas
+```sql
+-- Insira as lojas: Casas Bahia, Shopping Zona Leste, Bazar das Coisas e Americanas
+INSERT INTO lojas(nome) VALUE('Casas Bahia');
+INSERT INTO lojas(nome) VALUE('Shopping Zona Leste');
+INSERT INTO lojas(nome) VALUE('Bazar das Coisas');
+INSERT INTO lojas(nome) VALUE('Americanas');
+```
+
+## INSERT na tabela  Lojas-Produtos
+
+Esta é uma tabela intermediária (também conhecida como **tabela pivot**), ou seja, ela se relaciona  com outras duas tabelas: **produtos** e **lojas** através de chaves estrangeiras.
+
+```sql
+INSERT INTO lojas_produtos(loja_id, produto_id, estoque) VALUES(2, 1, 20);
+
+
+```
