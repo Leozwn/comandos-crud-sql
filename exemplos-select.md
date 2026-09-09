@@ -78,3 +78,11 @@ Exibir produtos com preço **entre 100 e 500**
 SELECT nome, preco FROM produtos
 WHERE preco, BETWEEN 100 and 500;
 ```
+
+### IN
+
+exibir produtos que tenha o fornecedor ID 1, 4 ou 8;
+```sql
+SELECT * from produtos
+where fornecedor_id in (1, 4, 8);
+```
