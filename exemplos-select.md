@@ -72,3 +72,9 @@ SELECT nome, preco FROM produtos WHERE NOT preco > 1000;
 
 `SELECT nome, preco FROM produtos WHERE preco <= 1000;`
 
+### BETWEEN
+Exibir produtos com preço **entre 100 e 500**
+```sql
+SELECT nome, preco FROM produtos
+WHERE preco, BETWEEN 100 and 500;
+```
