@@ -157,3 +157,26 @@ FROM produtos p
 INNER JOIN fornecedores f
     ON p.fornecedor_id = f.id;
 ```
+
+### JOIN com filtro
+
+Exibir somente os produtos com preço superior a R$ 1000
+mostrando também o nome de seus fornecedores
+
+```sql
+SELECT 
+    produtos.nome AS produto,
+    produtos.preco,
+    fornecedores.nome AS fornecedor
+FROM produtos INNER JOIN fornecedores 
+    ON produtos.fornecedor_id = fornecedores.id
+WHERE produtos.preco > 1000;
+```
+
+### Desafio: JOIN envolvendo 3 tabela
+
+Objetivo: descobrir qual produto é vendido em qual loja e qual é seu estoque naquela loja.
+
+```sql
+    
+```
